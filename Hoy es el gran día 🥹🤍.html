@@ -91,7 +91,8 @@
 <audio id="sonidoCelebracion">
   <source src="celebracion.mp3" type="audio/mpeg">
 </audio>
-
+};
+}
 <audio id="musicaFondo" loop>
   <source src="beginning_middle_end.mp3" type="audio/mpeg">
 </audio>
@@ -100,7 +101,7 @@
 <section id="pantalla1" class="active">
   <h1>🎉 FELIZ CUMPLEAÑOS LINDA 🎉</h1>
   <p>Hoy celebramos tu vida, tu sonrisa y todo lo hermoso que eres 🤍💕</p>
-  <button onclick="irA(2)">Haz click para empezar con el primer regalo 💝</button>
+  <button onclick="reproducirTodo(); irA(2)">Haz click para empezar con el primer regalo 💝</button>
 </section>
 
 <!-- SECCIÓN 2 -->
@@ -514,11 +515,29 @@ Se q últimamente no hemos hablado y nos hemos distanciado bastante, capaz ni si
 <script>
 const celebracion = document.getElementById("sonidoCelebracion");
 const fondo = document.getElementById("musicaFondo");
+let fondoListo = false;
 
-celebracion.play();
-celebracion.onended = () => {
-  fondo.play();
-};
+// Reproduce celebración
+function reproducirTodo() {
+  celebracion.play();
+
+  celebracion.onended = () => {
+    prepararFondo();
+  };
+}
+
+// Prepara música de fondo (pero aún no la lanza)
+function prepararFondo() {
+  fondo.volume = 0.6;
+  fondoListo = true;
+}
+
+// Se activa cuando el usuario toca después
+document.addEventListener("click", () => {
+  if (fondoListo && fondo.paused) {
+    fondo.play();
+  }
+});
 
 function irA(numero) {
   document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
