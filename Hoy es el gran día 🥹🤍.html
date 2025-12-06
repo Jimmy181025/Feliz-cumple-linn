@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Feliz Cumpleaños Linda ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      background: linear-gradient(135deg, #b388ff, #8ec5fc);
+      background-attachment: fixed;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    section {
+      min-height: 100vh;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 30px 15px;
+      animation: fade 1s ease;
+    }
+
+    section.active {
+      display: flex;
+    }
+
+    h1, h2 {
+      text-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    button {
+      padding: 15px 25px;
+      border: none;
+      border-radius: 25px;
+      background: #ff5fa2;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+      margin-top: 20px;
+      box-shadow: 0 0 15px rgba(255,255,255,0.4);
+    }
+
+    button:hover {
+      transform: scale(1.05);
+    }
+
+    .carta {
+      background: rgba(255,255,255,0.15);
+      padding: 25px;
+      border-radius: 20px;
+      max-width: 800px;
+      line-height: 1.6;
+    }
+
+    .spotify-btn {
+      display: block;
+      margin: 12px auto;
+      padding: 14px 20px;
+      background: #1DB954;
+      color: white;
+      border-radius: 25px;
+      text-decoration: none;
+      width: 90%;
+      max-width: 420px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    }
+
+    .razones {
+      background: rgba(255,255,255,0.15);
+      padding: 20px;
+      border-radius: 20px;
+      max-width: 900px;
+      text-align: left;
+      font-size: 15px;
+    }
+
+    @keyframes fade {
+      from { opacity: 0; transform: scale(0.97); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+
+<!-- SONIDOS -->
+<audio id="sonidoCelebracion">
+  <source src="celebracion.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="musicaFondo" loop>
+  <source src="beginning_middle_end.mp3" type="audio/mpeg">
+</audio>
+
+<!-- SECCIÓN 1 -->
+<section id="pantalla1" class="active">
+  <h1>🎉 FELIZ CUMPLEAÑOS LINDA 🎉</h1>
+  <p>Hoy celebramos tu vida, tu sonrisa y todo lo hermoso que eres 🤍💕</p>
+  <button onclick="irA(2)">Haz click para empezar con el primer regalo 💝</button>
+</section>
+
+<!-- SECCIÓN 2 -->
+<section id="pantalla2" style="background: linear-gradient(135deg, #c77dff, #e0aaff);">
+  <h2>Mi carta para ti 💌</h2>
+  <div class="carta">
+    <p>Mi niña hermosa… Desde que llegaste a mi vida, todo cambió. Gracias por existir, por ser tú, por iluminar mis días incluso a la distancia. Hoy quiero que sepas que te amo con todo mi corazón, que eres mi paz, mi ilusión y mi lugar seguro, espero te guste mi carta.</p>
+    
+  <p> EL AMOR QUE NACIÓ A LA DISTANCIA</p>
+
+Querida Linda Vega,
+Hoy es tu cumpleaños y por esa misma razón quise escribirte algo único, sincero y sobre todo, memorable. Se q te gusta lo q sale directo del corazón lo que se hace especialmente para tí.
+
+Un día como hoy, hace 16 años naciste y desde ese día has alegrado la vida de muchas personas, incluyendome a mi, desde q te conocí supe q no eras como otras chicas, al principio no sabía el por qué, y si te soy sincero, aún trato de descubrirlo por completo, digo q no eres como otras chicas no por comparación física ni nada por el estilo, creeme q es lo de menos. Eres diferente por tu forma tan única y especial de ser con las personas, por tu risa tan contagiosa, por como le agradas a los bebés y a los animalitos a pesar de ser una desconocida, esa es la verdadera aura,  la q te distingue de cualquier otra chica y lo q me enamoró de tí cuando entraste a mi vida, creeme q lo q menos buscaba en ese momento era una relación, sin embargo, la conexión q tuve contigo desde el inicio me hizo cuestionarme la suerte q tuve q tener para coincidir contigo ese día, te imaginas q no hubiéramos hablado? Q nunca me hubiera animado a mandarte esa solicitud de seguido y ese mensaje? Yo no, porque ni siquiera quiero saberlo, no me interesa saber q hubiera Sido de mi vida de no haberte conocido, te amo y con eso es mas q suficiente.
+Se q últimamente no hemos hablado y nos hemos distanciado bastante, capaz ni siquiera tengas ganas de abrir este PDF. Y si te soy sincero, eso me pone bastante triste, se q te lastimé al desconfiar de tí cuando en verdad lo estabas intentando, cuando en verdad estabas haciendo las cosas bien, te lastimé y no sabes cuándo me arrepiento, pero si de algo estoy seguro es q te amo demasiado y se q puedo despertar los sentimientos q tenias hacia mi de nuevo, esta vez para hacer las cosas bien y construir una vida entera a tu lado. Basta con q estés lista para intentarlo una última vez y yo me encargaré del resto, te lo Pinky prometo mi flaquita 🤍.  . Feliz cumpleaños, mi princesita 🤍 </p>
+  </div>
+  <button onclick="irA(3)">¿Te gustó? La siguiente sorpresa te encantará 💕</button>
+</section>
+
+<!-- SECCIÓN 3 -->
+<section id="pantalla3" style="background: linear-gradient(135deg, #1db954, #1ed760);">
+  <h2>Nuestras canciones 🎧</h2>
+
+  <a class="spotify-btn" target="_blank" href="https://open.spotify.com/search/Amor%20Completo%20Mon%20Laferte">Amor Completo – Mon Laferte</a>
+  <p>-todos mis sentidos estallarán de tanto amarte</p>
+<p>-como se pueden sentir tanto en tan poco tiempo y no morir?</p>
+-puedes hacer lo q quieras conmigo</p>
+-arrullame, ahogame, aplastame!!</p>
+-desarmame, cómeme y fumame!!</p>
+-no es fácil q no estés aquí!!</p>
+  <a class="spotify-btn" target="_blank" href="https://open.spotify.com/search/Mi%20Persona%20Favorita%20RioRoma">Mi Persona Favorita – RioRoma</a>
+-desde el día en que te Vi sentí como si ya te conocía</p>
+-1 minuto fue suficiente y ya sentía quererte</p>
+-me encanta q seas tan ocurrente </p>
+-de repente dices cosas q me vuelan la mente</p>
+-siempre estás presente, aunq no pueda verte</p>
+-ya eres me persona favorita!!!</p>
+-cada minuto a tu lado es genial!!</p>
+-no hay nadie en el mundo mundial q ame más q estar contigo</p>
+-te quiero, te quiero, te quierooo!! y siempre así será..</p>
+-aunq llueva o truene nunca pasará lo nuestro</p>
+-apareciste justamente cuando ya estaba listo para quererte!!!</p>
+-q suerte, como te fuí a encontraaar!!!!!</p>
+  <a class="spotify-btn" target="_blank" href="https://open.spotify.com/search/Bonita%20Mon%20Laferte">Bonita – Mon Laferte</a>
+-atame el corazón y déjame las manos libres para así poder tocar cada relieve de tu cuerpo sensual</p>
+-quiero ser tu latido 💓</p>
+-tan delicada yo te siento🥹</p>
+-esq tu eres tan pero tan bonita 😭</p>
+-no quisiera perderte jamásss</p>
+  <a class="spotify-btn" target="_blank" href="https://open.spotify.com/search/Te%20Vi%20Venir%20Sin%20Bandera">Te Vi Venir – Sin Bandera</a>
+-aun ni siquiera te tengo y ya tengo miedo de perderte 😞</p>
+-es poco lo q te conozco y ya pongo todo el juego a tu favor 🥹💕 </p>
+-perderte si me da pavor 😭</p>
+-no me queda más q hacer, q hacerte una poesia</p>
+-te besé y me arriesgué con la verdad 🥹🤍</p>
+-al fin abrí mi corazón para q tú pasaras</p>
+-mi amor te di sin condición para q te quedaras 🥹💕</p>
+  <a class="spotify-btn" target="_blank" href="https://open.spotify.com/search/Abr%C3%A1zame%20Siddhartha">Abrázame – Siddhartha</a>
+-perdoname si yo te habré causado alguna herida</p>
+  <a class="spotify-btn" target="_blank" href="https://open.spotify.com/search/Confieso%20Humbe">Confieso – Humbe</a>
+-esos ojos color miel, esos labios q tanto soñé, te besé</p>
+-todo paso en un instante, te volviste de pronto importante</p>
+-el corazón me está ganando</p>
+-esta vez ya no voy a soltarte</p>
+-no te dejo de pensar</p>
+-solo tu me haces sentir completo</p>
+  <a class="spotify-btn" target="_blank" href="https://open.spotify.com/search/Until%20I%20Found%20Yosection.activeu%20Stephen%20Sanchez">Until I Found You – Stephen Sanchez</a>
+-i want You un My arms</p>
+-i never let You go again like i did</p>
+-i would never falling in love again until found her</p>
+-i was Lost within the darkness, but then i found her</p>
+
+  <button onclick="irA(4)">La última sorpresa… 💖</button>
+</section>
+
+<!-- SECCIÓN 4 -->
+<section id="pantalla4" style="background: linear-gradient(135deg, #48cae4, #90dbf4);">
+  <h2>100 razones por las que te amo 🤍</h2>
+  <div class="razones">
+    <p>. 100 razones por las que te amo, mi flaquita 🤍💕</p>
+
+
+
+1–20 | Porque tú eres tú</p>
+
+
+
+1.- Porque me encanta tu forma de ser</p>
+
+
+2.- Porque tu esencia me salvó en mis días malos</p>
+
+
+3.- Porque tu sonrisa tiene algo que no encuentro en nadie más</p>
+
+
+4.- Porque tu voz me calma aunque estemos tan lejos</p>
+
+
+5.- Porque tu manera de expresarte tiene una ternura casi imposible de explicar</p>
+
+
+6.- Porque, sin saberlo, eres mucho más fuerte de lo q crees</p>
+
+
+7.- Porque tu sensibilidad te hace hermosa</p>
+
+
+8.- Porque tus ojos (aunque solo los vea en fotos) dicen más de 1000 palabras (aparte q son tan hermosos como 2 luceros brillantes)</p>
+
+
+9.- Porque tu presencia, incluso a través de una pantalla, alegraba mis días</p>
+
+
+10- Porque tu esencia es auténtica y eso se siente</p>
+
+
+11.- Porque tu forma de amar es tan tierna y sincera como pura</p>
+
+
+12.- Porque cuando ríes, lo malo desaparece</p>
+
+
+13.- Porque incluso enojada te ves tierna (aunq no me guste verte así)</p>
+
+
+14.- Porque pones a las personas q te importan antes q a ti misma</p>
+
+
+15.- Porque sabes escuchar y aconsejar</p>
+
+
+16.- Porque no intentas ser perfecta, y aun así lo eres para mí</p>
+
+
+17.- Porque tienes una belleza que va mucho más allá de lo físico</p>
+
+
+18.- Porque eres dulce sin siquiera intentarlo.</p>
+
+
+19.- Porque tu mirada transmite cosas que no puedo describir.</p>
+
+
+20.- Porque simplemente existes. 🤍</p>
+
+
+
+21–40 | Porque lo que siento contigo es real</p>
+
+
+
+21.- Porque contigo, aunq sea difícil haces q quiera amarte cada día más</p>
+
+
+22.- Porque a tu lado puedo ser yo mismo</p>
+
+
+23.- Porque me haces querer ser mejor persona</p>
+
+
+24.- Porque me haces sentir q soy digno de tí </p>
+
+
+25.- Porque contigo siento paz</p>
+
+
+26.- Porque contigo todo tiene más sentido.</p>
+
+
+27.-Porque me haces creer de nuevo en el amor</p>
+
+
+28.- Porque me inspiras a cuidar lo que tenemos (aunq a veces tome malas decisiones)</p>
+
+
+29.- Porque contigo descubrí emociones que no conocía</p>
+
+
+30.- Porque eres mi lugar seguro, aunque estemos lejos</p>
+
+
+31.- Porque cuando hablo contigo me siento feliz sin razón</p>
+
+
+32.- Porque me haces sentir q vale la pena amarme</p>
+
+
+33.- Porque tu cariño tiene un impacto real en mi vida</p>
+
+
+34.- Porque tu forma de mirarme aunque sea por pantalla me derrite.</p>
+
+
+35.- Porque contigo puedo hablar de todo.</p>
+
+
+36.- Porque contigo quiero intentarlo siempre a pesar de nuestras diferencias</p>
+
+
+37.- Porque realmente me siento amado y valorado</p>
+
+
+38.- Porque contigo todo se siente más tierno</p>
+
+
+39.- Porque tu amor es suave, pero profundo</p>
+
+
+40.- Porque siento q lo nuestro es real</p>
+
+
+
+41–60 | Porque nuestros momentos valen oro</p>
+
+
+
+41.- Porque recuerdo la primera vez q dijiste "te amo" y tocaste mi alma por primera vez</p>
+
+
+42.-Porque hay momentos que tuvimos que nunca olvidaré</p>
+
+
+43.- Porque incluso tus silencios son cálidos</p>
+
+
+44.- Porque hasta tus saludos son especiales</p>
+
+
+45.- Porque tus despedidas siempre me dejan con más ganas de hablar contigo</p>
+
+
+46.- Porque cada conversación que tenemos es íntima para mí</p> 
+
+
+47.- Porque hemos reído juntos sin necesitar estar cerca</p>
+
+
+48.- Porque has estado para mí cuando más lo necesité</p>
+
+
+49.- Porque nuestros momentos más simples para mí valen oro</p>
+
+
+50.- Porque contigo hasta el mensaje más simple es especial</p>
+
+
+51.- Porque cuando te abres conmigo, me siento cerca de tu corazón</p>
+
+
+52.- Porque guardo cada recuerdo nuestro como un tesoro</p>
+
+
+53.- Porque tus palabras me han levantado más de una vez</p>
+
+
+54. Porque me encanta la confianza que me das al contarme tus cosas</p>
+
+
+55.- Porque me haces sentir que pertenezco a tu mundo</p>
+
+
+56.- Porque aunque estemos lejos, siento tu compañía</p>
+
+
+57.- Porque cada vez que veo tu nombre en mi pantalla, sonrío</p>
+
+
+58.- Porque contigo, lo cotidiano se vuelve especial</p>
+
+
+59.- Porque pensé que era imposible sentir tanto a distancia… hasta q te conocí 🤍</p>
+
+
+60.- Porque cada momento contigo vale la pena</p>
+
+
+
+61–80 | Porque admiro quién eres</p>
+
+
+
+61.- Porque eres valiente incluso cuando tienes dudas</p>
+
+
+62.- Porque luchas por lo que quieres con el corazón</p>
+
+
+63.- Porque tienes un corazón único y hermoso</p>
+
+
+64.- Porque te preocupas por tu familia🫂</p>
+
+
+65.- Porque sigues creyendo q los sueños pueden cumplirse</p>
+
+
+66.- Porque ayudas sin esperar algo a cambio</p>
+
+
+67.- Porque tu bondad se nota sin que digas nada</p>
+
+
+68.- Porque eres inteligente... A tu manera 💕</p>
+
+
+69.- Porque tienes una energía que me atrae</p>
+
+
+70.- Porque sabes cuando alguien necesita tu apoyo y ser escuchado</p>
+
+
+71.- Porque cuidas lo que amas</p>
+
+
+72.- Porque eres paciente... A veces</p>
+
+
+73.- Porque eres tierna y fuerte a la vez</p>
+
+
+74.- Porque tu sensibilidad no es debilidad, es un superpoder 💆</p>
+
+
+75.- Porque eres única 🪞✨</p>
+
+
+76.- Porque vales más de lo q crees (aunq a veces tus bajones emocionales te hagan creer lo contrario)💔😞</p>
+
+
+77.- Porque tu presencia alegra cualquier ambiente</p>
+
+
+78.- Porque incluso tus imperfecciones te hacen perfecta</p>
+
+
+79.- Porque eres más sentimental de lo que tú misma crees</p>
+
+
+80.- Porque eres tú… y eso basta 🪞✨🤍💕</p>
+
+
+
+81–100 | Porque contigo quiero futuro</p>
+
+
+
+81.- Porque contigo quiero q todo salga bien</p>
+
+
+82.- Porque me haces creer que vale la pena luchar por el amor</p>
+
+
+83.- Porque contigo quiero aprender a amar mejor (aunq me equivoque en el proceso)</p>
+
+
+84.- Porque me imagino tomándote de la mano por primera vez 🥹✨</p>
+
+
+85.- Porque quiero darte abrazos que aún te debo 😭</p>
+
+
+86.- Porque quiero que un día no exista distancia entre nosotros💫 </p>
+
+
+87.- Porque me ilusiona lo que podemos llegar a ser ✨💕🤍</p>
+
+
+88.- Porque quiero caminar contigo aunque encontremos piedras en el camino</p>
+
+
+89.- Porque contigo quiero construir una historia de amor q no tenga final ✨🤍</p>
+
+
+90.- Porque quiero cuidar tu corazón 🤍</p>
+
+
+91.- Porque quiero que sientas lo mucho q te amo 🤍💕✨</p>
+
+
+92.- Porque quiero crecer contigo 💫</p>
+
+
+93- Porque te imagino en mi vida y me siento el hombre más afortunado 😭</p>
+
+
+94.- Porque contigo todo parece posible, incluso lo q pudiera parecer imposible</p>
+
+
+95.- Porque quiero que un día podamos mirarnos sin pantallas.</p>
+
+
+96.- Porque quiero compartir sueños, miedos y días contigo, como tú novio y futuro esposo si me lo permites 🤍💫✨</p>
+
+
+97.- Porque cada día me das una razón nueva para amarte 💕</p>
+
+
+98.- Porque lo que siento por ti no es pasajero, sino eterno🤍💫✨</p>
+
+
+99. Porque contigo quiero envejecer 👴🏻</p>
+
+
+100.- Porque eres Linda, mi princesita, mi único amor… y no existe nadie como tú 🤍💕💫</p>
+  </div>
+
+  <h2 style="margin-top: 40px;">Feliz cumpleaños mi princesa, espero te haya gustado esto y que la pases increíble en tu día. Te amo con todo mi corazón 🤍💕</h2>
+</section>
+
+<script>
+const celebracion = document.getElementById("sonidoCelebracion");
+const fondo = document.getElementById("musicaFondo");
+
+celebracion.play();
+celebracion.onended = () => {
+  fondo.play();
+};
+
+function irA(numero) {
+  document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+  document.getElementById('pantalla' + numero).classList.add('active');
+}
+</script>
+
+</body>
+</html>
